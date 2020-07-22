@@ -1,0 +1,39 @@
+<h1>
+  General Details
+</h1>
+<form [formGroup]="form">
+  <label>
+    First name:
+  </label>
+  <input type="text" formControlName="firstName">
+  <control-messages [control]="form.get('firstName')"></control-messages>
+  <label>
+    Last name:
+  </label>
+  <input type="text" formControlName="lastName">
+  <control-messages [control]="form.get('lastName')"></control-messages>
+  <label>
+    Full name:
+  </label>
+  <div class="text-container">
+    {{
+      form.value.firstName + ' ' + form.value.lastName
+    }}
+  </div>
+  <label>
+    D.O.B
+  </label>
+  <input type="date" formControlName="dob">
+  <control-messages [control]="form.get('dob')"></control-messages>
+  <div *ngIf="form.get('dob').valid">
+    <label>
+      age
+    </label>
+    <div class="text-container">
+      {{
+        ageCalculation(form.value.dob)
+      }}
+    </div>
+  </div>
+
+</form>

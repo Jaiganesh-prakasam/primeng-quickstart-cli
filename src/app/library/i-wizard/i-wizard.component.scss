@@ -1,0 +1,57 @@
+div {
+  &.dot {
+    display: flex;
+    overflow-x: auto;
+		.actual-dot-complete {
+      min-width: 20%;
+      text-align: center;
+			&::before {
+				content: "";
+        display: inline-block;
+        align-self: center;
+				margin: 10px 0px 0px;
+        align-self: flex-start;
+				color: red;
+				background: red content-box;
+				padding: 4px;
+				border: 2px solid red;
+				border-radius: 50%;
+				width: 8px;
+				height: 8px;
+			}
+    }
+    .actual-dot-incomplete {
+      min-width: 20%;
+      text-align: center;
+			&::before {
+				content: "";
+        display: inline-block;
+        align-self: center;
+				margin: 10px 0px 0px;
+        align-self: flex-start;
+				color: grey;
+				background: grey content-box;
+				padding: 4px;
+				border: 2px solid grey;
+				border-radius: 50%;
+				width: 8px;
+				height: 8px;
+			}
+		}
+	}
+}
+.four-steps {
+  min-width: 25%
+}
+.three-steps {
+  min-width: 33%
+}
+.two-steps {
+  min-width: 50%
+}
+.one-step {
+  min-width: 100%
+}
+.more-steps {
+  min-width: 20%;
+}

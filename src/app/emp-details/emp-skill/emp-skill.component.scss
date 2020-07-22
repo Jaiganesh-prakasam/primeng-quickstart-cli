@@ -1,0 +1,13 @@
+.emp-skill-button {
+  display: flex;
+  justify-content: flex-end;
+  &-center {
+    justify-content: center;
+  }
+}
+.emp-skill-card {
+  border: solid black 1px;
+  margin: 4px;
+  padding: 4px;
+  border-radius: 10px;
+}

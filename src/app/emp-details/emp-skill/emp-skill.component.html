@@ -1,0 +1,43 @@
+<h1>
+  Skills
+</h1>
+<form [formGroup]="form">
+  <ng-container formArrayName="empSkillArray">
+    <section *ngFor="let _ of skillFormArray.controls; index as i" class="emp-skill-card">
+      <ng-container [formGroupName]="i"  >
+        <label>
+          skill:
+        </label>
+        <input
+          type="text"
+          formControlName="skill"
+          (keyup)="getSkill.emit(i)"
+          id="skill"
+          list="dynmic-skills"
+          autocomplete="off"
+          (blur)="storeNewSkill.emit(i)">
+        <datalist id="dynmic-skills">
+          <option *ngFor="let item of empDetailsService.skillListOptions" [value]="item">{{item}}</option>
+        </datalist>
+        <control-messages [control]="skillFormArray.controls[i].get('skill')"></control-messages>
+        <label>
+          rate: (out of 10)
+        </label>
+        <input type="number" formControlName="rate">
+        <control-messages [control]="skillFormArray.controls[i].get('rate')"></control-messages>
+      </ng-container>
+      <div class="emp-skill-button">
+        <button *ngIf="skillFormArray.controls.length > 1" (click)="deleteSkill.emit(i)">remove</button>
+      </div>
+    </section>
+  </ng-container>
+</form>
+<div class="emp-skill-button">
+  <button (click)="addSkill.emit()">Add skill</button>
+</div>
+<div *ngFor="let i of empDetailsService.errorFormArray">
+  {{i}}
+</div>
+<div class="emp-skill-button emp-skill-button-center">
+  <button (click)="empDetailsService.formValidation()"> Submit </button>
+</div>

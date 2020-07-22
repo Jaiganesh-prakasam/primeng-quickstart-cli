@@ -1,0 +1,41 @@
+<h1>
+  Contacts
+</h1>
+<form [formGroup]="form">
+  <label>
+    Email:
+  </label>
+  <input type="text" formControlName="email">
+  <control-messages [control]="form.get('email')"></control-messages>
+  <label>
+    Phone:
+  </label>
+  <input type="text" formControlName="phone">
+  <control-messages [control]="form.get('phone')"></control-messages>
+  <ng-container formArrayName="socialInfo">
+    <div style="margin-bottom:8px">
+      Social Information:
+    </div>
+    <section  *ngFor="let _ of socialInfoFormArray.controls; index as i" class="social-info">
+      <ng-container [formGroupName]="i"  >
+        <label>
+          Url:
+        </label>
+        <input type="text" formControlName="url">
+        <control-messages [control]="socialInfoFormArray.controls[i].get('url')"></control-messages>
+        <label>
+          type:
+        </label>
+        <input type="text" formControlName="type">
+        <control-messages [control]="socialInfoFormArray.controls[i].get('type')"></control-messages>
+      </ng-container>
+      <div class="button-container">
+        <button *ngIf="socialInfoFormArray.controls.length > 1" (click)="deleteSocialInfo.emit(i)">remove</button>
+      </div>
+    </section>
+    <div class="button-container">
+      <button (click)="addSocialInfo.emit()">Add social information</button>
+    </div>
+  </ng-container>
+
+</form>

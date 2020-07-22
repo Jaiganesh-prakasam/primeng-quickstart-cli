@@ -1,0 +1,4 @@
+<ng-content>
+</ng-content>
+<button class="button" *ngIf="!isFirst" (click)="previousPage()" > Previous </button>
+<button class="button" *ngIf="!isLast" [disabled]="validityChecker()" (click)="nextPage()"> Next </button>
