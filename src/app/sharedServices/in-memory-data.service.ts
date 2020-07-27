@@ -13,9 +13,7 @@ export class InMemoryDataService implements InMemoryDbService {
         empGeneral: {
           firstName: 'John Doe',
           lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -69,9 +67,7 @@ export class InMemoryDataService implements InMemoryDbService {
         empGeneral: {
           firstName: 'Vincent',
           lastName: 'Board',
-          fullName: 'Vincent Board',
-          dob: '1991-01-20',
-          age: 28,
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -125,9 +121,7 @@ export class InMemoryDataService implements InMemoryDbService {
         empGeneral: {
           firstName: 'Rtosh',
           lastName: 'Tailor',
-          fullName: 'Rtosh Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -179,11 +173,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 4,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Rick',
+          lastName: 'Morty',
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -235,11 +227,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 5,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Vicky',
+          lastName: 'Raj',
+          dob: '1996-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -291,11 +281,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 17,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Vincent',
+          lastName: 'chase',
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -347,11 +335,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 6,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Chase',
+          lastName: 'Tucker',
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -403,11 +389,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 7,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Naresh',
+          lastName: 'Rama moorthy',
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -459,11 +443,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 8,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Robert',
+          lastName: 'Baratheo',
+          dob: '1991-05-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -515,11 +497,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 9,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Ned',
+          lastName: 'Stark',
+          dob: '1989-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -571,11 +551,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 10,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Tony',
+          lastName: 'Stark',
+          dob: '1996-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -627,11 +605,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 11,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Jason',
+          lastName: 'Wicket',
+          dob: '1991-07-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -683,11 +659,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 12,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'John',
+          lastName: 'Ruler',
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -739,11 +713,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 13,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Tony',
+          lastName: 'Winner',
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -795,11 +767,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 14,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Darryl',
+          lastName: 'Heathscot',
+          dob: '1993-09-24'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -851,11 +821,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 15,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'Sean',
+          lastName: 'Paul',
+          dob: '1995-07-30'
         },
         empContact: {
           email: 'xyz@gmail.com',
@@ -907,11 +875,9 @@ export class InMemoryDataService implements InMemoryDbService {
       {
         id: 16,
         empGeneral: {
-          firstName: 'John Doe',
-          lastName: 'Tailor',
-          fullName: 'John Doe Tailor',
-          dob: '1991-01-20',
-          age: 26,
+          firstName: 'John',
+          lastName: 'Bridge',
+          dob: '1991-01-20'
         },
         empContact: {
           email: 'xyz@gmail.com',
